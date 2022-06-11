@@ -2,4 +2,4 @@
 
 Em contrução...
 
-Landing page criada baseada na 6ª nlw da Rocketseat
+Landing page que está sendo desenvolvida com base na 6ª nlw da Rocketseat
