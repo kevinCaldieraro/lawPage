@@ -1,9 +1,129 @@
 /* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  /*------ HEADER MENU ------*/
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  /*------ LAYOUT ------*/
+  main {
+    margin-top: var(--header-height);
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*------ HOME ------*/
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+    max-width: 34rem;
+  }
+
+  #home .image img {
+    right: 0;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 26rem;
+    text-align: left;
+    margin: 0 0;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
+
+  /*------ ABOUT ------*/
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+  /*------ SERVICES ------*/
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /*------ TESTIMONIALS ------*/
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*------ CONTACT ------*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25.25rem;
+  }
+
+  /*------ CONTACT ------*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
 /* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
   }
 }
 /* medium devices: 767 > */

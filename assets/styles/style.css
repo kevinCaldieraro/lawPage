@@ -34,6 +34,9 @@ img {
 
   /* fonts */
   --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
 }
 
 /*------ BASE ------*/
@@ -42,17 +45,21 @@ html {
 }
 
 body {
-  font: 400 1rem 'DM Sans', sans-serif;
+  font: 400 1rem var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font: 700 var(--title-font-size) 'Poppins', sans-serif;
+  font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
   -webkit-font-smoothing: auto;
   margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
 }
 
 .divider-1 {
@@ -85,7 +92,7 @@ body {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
   overflow: hidden;
 }
 
@@ -111,13 +118,9 @@ body {
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
 }
 
-main {
-  margin-top: calc(var(--header-height) + 0.5rem);
-}
-
 /*------ LOGO ------*/
 .logo {
-  font: 700 1.3125rem 'Poppins', sans-serif;
+  font: 700 1.3125rem var(--title-font);
   color: var(--title-color);
 }
 
@@ -146,8 +149,11 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav .menu ul li a.title:hover,
+nav .menu ul li a.title.active {
   color: var(--base-color);
+  font-weight: bold;
+  -webkit-font-smoothing: auto;
 }
 
 nav ul li a::after {
@@ -161,7 +167,8 @@ nav ul li a::after {
   transition: width 0.3s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
 }
 
@@ -267,7 +274,7 @@ nav.show .icon-close {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem 'DM Sans', sans-serif;
+  font: 500 1rem var(--body-font);
   transition: background 0.3s;
 }
 
@@ -436,6 +443,10 @@ footer {
   background-color: var(--base-color);
 }
 
+footer.section {
+  padding: 4rem 0;
+}
+
 footer .grid {
   gap: 1.25rem;
 }
@@ -450,11 +461,15 @@ footer .brand p {
   margin-bottom: 0.75rem;
 }
 
+footer .social {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
 footer i {
   display: inline-block;
   font-size: 1.5rem;
   color: var(--text-color-light);
-  margin-right: 2rem;
   transition: 0.3s;
 }
 
