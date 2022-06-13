@@ -1,0 +1,9 @@
+/* extra large devices: 1200 > */
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+  }
+}
+/* medium devices: 767 > */
