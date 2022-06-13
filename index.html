@@ -9,7 +9,13 @@
     <!---- ICONS ---->
     <link rel="stylesheet" href="./assets/fonts/style.css" />
 
-    <!---- CSS ---->
+    <!---- SWIPER ---->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!---- STYLE ---->
     <link rel="stylesheet" href="./style.css" />
 
     <!---- FONTS ---->
@@ -41,6 +47,7 @@
     </header>
 
     <main>
+      <!---- HOME ---->
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -62,6 +69,7 @@
 
       <div class="divider-1"></div>
 
+      <!---- ABOUT ---->
       <section class="section" id="about">
         <div class="container grid">
           <div class="image">
@@ -98,6 +106,7 @@
 
       <div class="divider-2"></div>
 
+      <!---- SERVICES ---->
       <section class="section" id="services">
         <div class="container grid">
           <header>
@@ -116,7 +125,7 @@
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                 asperiores consequatur laborum sunt ex a excepturi. Et
-                reiciendis incidunt delectus
+                reiciendis incidunt delectus.
               </p>
             </div>
             <div class="card">
@@ -125,7 +134,7 @@
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                 asperiores consequatur laborum sunt ex a excepturi. Et
-                reiciendis incidunt delectus
+                reiciendis incidunt delectus.
               </p>
             </div>
             <div class="card">
@@ -134,14 +143,145 @@
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
                 asperiores consequatur laborum sunt ex a excepturi. Et
-                reiciendis incidunt delectus
+                reiciendis incidunt delectus.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="divider-1"></div>
+
+      <!---- TESTIMONIALS ---->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos</h2>
+          </header>
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus necessitatibus nisi rerum tempora incidunt sit beatae
+                    reiciendis illum.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/81.jpg"
+                      alt="Foto da Maria Augusta"
+                    />
+                    Maria Augusta
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus necessitatibus nisi rerum tempora incidunt sit beatae
+                    reiciendis illum.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/43.jpg"
+                      alt="Foto do Romeu Júnior"
+                    />
+                    Romeu Júnior
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minus necessitatibus nisi rerum tempora incidunt sit beatae
+                    reiciendis illum.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/82.jpg"
+                      alt="Foto do Carlos Alberto"
+                    />
+                    Carlos Alberto
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!---- CONTACT ---->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a DireitoPenal Company, queremos tirar suas
+              dúvidas, ouvir suas críticas e sugestões.
+            </p>
+            <a
+              class="button"
+              href="https://api.whatsapp.com/send?phone=+5551986175354&text=Olá! Tudo bem?"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 51 99817-5354</li>
+              <li><i class="icon-map-pin"></i> R. Getúlio Vargas, 453</li>
+              <li><i class="icon-mail"></i> contato@direitopenal.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
     </main>
 
+    <!---- FOOTER ---->
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Direito<span>Penal</span>.</a>
+          <p>&copy; 2022 DireitoPenal Company.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="social">
+          <a href="https://instagram.com" target="_blank"
+            ><i class="icon-instagram"></i></a
+          ><a href="https://facebook.com" target="_blank"
+            ><i class="icon-facebook"></i></a
+          ><a href="https://youtube.com" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+
+    <!---- SWIPER SCRIPT ---->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!---- SCROLLREVEAL SCRIPT ---->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!---- MAIN SCRIPT ---->
     <script src="./main.js"></script>
   </body>
 </html>

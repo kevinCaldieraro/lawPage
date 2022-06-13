@@ -17,7 +17,7 @@ for (const element of links) {
   });
 }
 
-//scroll change header ----------------
+//Scroll change header ----------------
 const header = document.querySelector('#header');
 const navHeight = header.offsetHeight;
 
@@ -28,3 +28,35 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll');
   }
 });
+
+//Testimonials carousel ----------------
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+});
+
+//Scrollreveal ----------------
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+});
+
+scrollReveal.reveal(
+  `
+#home .image, #home .text,
+#about .image, #about .text,
+#services header, #services .card,
+#testimonials header, #testimonials .testimonials,
+#contact .text, #contact .links
+`,
+  { interval: 100 }
+);
+
+//Back to top ----------------
